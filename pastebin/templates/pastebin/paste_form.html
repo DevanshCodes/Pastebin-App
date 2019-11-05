@@ -1,0 +1,10 @@
+<h1>Create a Paste!</h1>
+<form action='' method="POST">
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <input type="submit" value="create" name="create">
+</form>
+
+<a href="{% url 'viewAll' %}">View All</a>
